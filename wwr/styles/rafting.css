@@ -1,4 +1,4 @@
-/* @import url('https://fonts.google.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.google.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
 :root {
     --primary-color: #2D3047;
@@ -57,13 +57,12 @@ header nav a:hover {
   color: #4CAF50;
 } */
 
-/* Styling headings
+/* Styling headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); /* Dark gray color for headings */
-  /* } */
-  
+    color: var(--primary-color); /* Dark gray color for headings 
+}
   /* Styling paragraphs */
-/* p {
+ p {
     color: #666; /* Medium gray color for paragraphs */
   }
   
@@ -170,4 +169,4 @@ body {
   text-align: center;
   padding: 10px;
   font-size: 1em; */
-} */
+} 
