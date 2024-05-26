@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+/* @import url('https://fonts.google.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
 :root {
     --primary-color: #2D3047;
@@ -6,8 +6,8 @@
     --accent1-color: #ED217C;
     --accent2-color: #1B998B;
 
-    --heading-font: 'YourHeadingFont', serif;
-    --paragraph-font: 'YourParagraphFont', serif;
+    --heading-font: '_______', serif;
+    --paragraph-font: '_______', serif;
 
     --nav-background-color: #3B0D11;
     --nav-link-color: #6A3937;
@@ -15,24 +15,17 @@
     --nav-hover-background-color: #748386;
 }
 
-body {
-    max-width: 1200px; 
-    margin: 0 auto; /* Center the content horizontally */
-    color: #333;
-    font-family: var(--paragraph-font);
-}
-
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  background-color: var(--nav-background-color);
+  background-color: #333;
   padding: 10px 20px;
   color: white;
-  border-bottom: 2px solid var(--accent2-color);
+  border-bottom: 2px solid #4CAF50;
 }
 
-.header img {
+header img {
   height: 60px;
   border-radius: 50%;
 }
@@ -44,7 +37,7 @@ body {
 
 .nav a {
   text-decoration: none;
-  color: var(--nav-link-color);
+  color: #333;
 }
 
 header nav {
@@ -61,122 +54,120 @@ header nav a {
 }
 
 header nav a:hover {
-  color: var(--accent2-color);
-}
+  color: #4CAF50;
+} */
 
-/* Styling headings */
+/* Styling headings
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color); /* Dark gray color for headings */
-    font-family: var(--heading-font);
-}
+  /* } */
   
-/* Styling paragraphs */
-p {
+  /* Styling paragraphs */
+/* p {
     color: #666; /* Medium gray color for paragraphs */
-}
+  }
   
-/* Removing underlines from social media links */
+  /* Removing underlines from social media links */
 footer .sociallinks a {
     text-decoration: none; /* Remove underline */
-}
+  }
   
-/* Styling the contact info section */
-.contact-info p {
-    font-size: 18px;
-    margin: 10px 0;
-}
+  /* Limiting entire width of the page */
+body {
+    max-width: 1200px; 
+    margin: 0 auto; /* Center the content horizontally */
+    color: #333;
+  }
   
-/* Styling the embedded Google map */
-.map {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Styling the employee profiles section */
-.employee-profiles {
-    display: flex;
-    justify-content: space-around;
+  /* Styling the hero container */
+.hero {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Ensure child elements don't overflow */
+    background-image: url('../images/istockphoto-954023442-612x612.jpg'); 
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  /* Styling the h1 heading */
+.hero h1 {
+    position: absolute;
     margin-bottom: 20px;
-}
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White color for the heading */
+  }
 
-.employee {
-    text-align: center;
-}
-
-.employee img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
-/* Styling the contact form */
-.contact-form {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
-}
-
-.contact-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-form .radio-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact-form .radio-group label {
-    flex: 1;
-}
-
-.contact-form .submit-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    border: none;
-    width: 100%;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-.contact-form .submit-button:hover {
-    background-color: var(--accent1-color);
-}
-
-/* Footer styles */
-footer {
-    background: var(--nav-background-color);
+.hero p {
+    float: left;
+    width: 50%;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+  }
+
+  /* Styling the article */
+.hero article {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust as needed */
+  /* transform: translateY(-50%); */
+  background-color: rgba(108, 164, 248, 0.61);
+  padding: 20px;
+  color: #fff;
+  width: 70%; /* Adjust width as needed */
+}
+  /* Styling the image inside the article */
+.hero article img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    float: right;
+    margin-left: 20px; /* Adding some space between image and text */
+  }
+  /* Styling the img as a background */
+
+.hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-image: url('../images/istockphoto-954023442-612x612.jpg'); Same image as background */
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1; /* Adjust opacity as needed */
+    }
+  
+/* Adventures Section Styles */
+.adventures-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
+.adventures-section figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f4f4f4;
 }
 
-footer ul li {
-    display: inline;
-    margin: 0 10px;
+.adventures-section img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+.adventures-section figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em; */
+} */
