@@ -59,7 +59,7 @@ header nav a:hover {
 
 /* Styling headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color); /* Dark gray color for headings 
+    color: var(--primary-color); /* Dark gray color for headings */
 }
   /* Styling paragraphs */
  p {
@@ -170,3 +170,242 @@ body {
   padding: 10px;
   font-size: 1em; */
 } 
+
+/* Contact Form */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contact-form .radio-group label {
+  font-weight: normal;
+}
+
+.contact-form .radio-group input {
+  margin-right: 5px;
+}
+
+.contact-form .submit-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form .submit-button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .sociallinks {
+  margin-top: 10px;
+}
+
+footer .sociallinks a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .sociallinks img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Additional Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .employee-profiles {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .employee {
+      margin-bottom: 20px;
+  }
+}
+
+/* Map */
+.map {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.employee {
+  text-align: center;
+}
+
+.employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form .radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contact-form .radio-group label {
+  font-weight: normal;
+}
+
+.contact-form .radio-group input {
+  margin-right: 5px;
+}
+
+.contact-form .submit-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form .submit-button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer .sociallinks {
+  margin-top: 10px;
+}
+
+footer .sociallinks a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .sociallinks img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Additional Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .employee-profiles {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .employee {
+      margin-bottom: 20px;
+  }
+}
