@@ -48,3 +48,14 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* Styling for the quiz button */
+div.quiz-button {
+    background-color: blue;
+}
+
+div.quiz-button input[type="submit"] {
+    width: auto; /* Set width to auto to allow button to expand */
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+}
