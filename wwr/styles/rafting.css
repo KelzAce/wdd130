@@ -15,8 +15,46 @@
     --nav-hover-background-color: #748386;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 2px solid #4CAF50;
+}
+
+header img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
 header nav {
-    color: var(--nav-link-color);
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #4CAF50;
 }
 
 /* Styling headings */
@@ -101,7 +139,38 @@ body {
         opacity: 0.1; /* Adjust opacity as needed */
     }
   
-  
+/* Adventures Section Styles */
+.adventures-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.adventures-section figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+.adventures-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.adventures-section figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 1em;
+}
 
   
 
