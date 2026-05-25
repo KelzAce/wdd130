@@ -2,16 +2,12 @@
     --primary-color: #055a05;
     --secondary-color: #f4a26f;
     --accent1-color: #264653;
-    --accent2-color: #e9e9e9;
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --accent2-color: #f5f5f5;
+    --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-} */
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -21,39 +17,39 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background: #fafafa;
+    line-height: 1.6;
 }
 
+/* LAYOUT */
 header,
 main,
 footer {
-    width: 840px;
+    width: min(90%, 840px);
     margin: 0 auto;
 }
 
+/* TYPOGRAPHY */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* spacing system (more consistent) */
 nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 18px 0;
 }
 
-.socialmedia {
-    width: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* HERO IMPROVEMENT */
 .hero {
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .hero img {
@@ -62,18 +58,58 @@ article {
     height: auto;
 }
 
+/* better overlay instead of harsh opacity */
 h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
-    padding: 16px;
+    left: 0;
+    right: 0;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    padding: 14px;
+    background: rgba(38, 70, 83, 0.75);
     color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
+/* ARTICLE IMAGE */
 .hero article img {
     float: right;
-    width: 125px;
+    width: 140px;
+    margin-left: 12px;
+    border-radius: 6px;
+}
+
+/* SOCIAL MEDIA FIX (your original was broken) */
+.socialmedia {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.socialmedia a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent2-color);
+    transition: all 0.2s ease;
+}
+
+.socialmedia a img,
+.socialmedia a svg {
+    width: 14px;
+    height: 14px;
+}
+
+.socialmedia a:hover {
+    background: var(--primary-color);
+    /* transform: translateY(-2px); */
+}
+
+.socialmedia a:hover img,
+.socialmedia a:hover svg {
+    filter: brightness(0) invert(1);
 }
