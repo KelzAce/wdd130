@@ -4,7 +4,7 @@
     --accent1-color: #264653;
     --accent2-color: #e9e9e9;
     --heading-font: "Times New Roman", "Georgia", serif;
-    --bondy-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 /* header {
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: var(--bondy-font);
+    font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
