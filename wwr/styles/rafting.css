@@ -104,7 +104,6 @@ header nav ul li a[aria-current="page"] {
     position: relative;
     margin: 24px 0;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
@@ -112,7 +111,9 @@ header nav ul li a[aria-current="page"] {
 .hero > img:first-of-type {
     display: block;
     width: 100%;
-    max-height: 420px;
+    min-height: 380px;
+    max-height: 480px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -130,33 +131,35 @@ header nav ul li a[aria-current="page"] {
     letter-spacing: 1px;
 }
 
-/* Article box: text + thumbnail side by side */
-.hero-article {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 16px;
-    background: rgba(255, 255, 255, 0.92);
+/* Article box: absolutely positioned over the hero image */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.88);
     border-left: 5px solid var(--secondary-color);
     border-radius: 8px;
     padding: 16px 20px;
-    margin: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
 }
 
-.hero-article p {
-    flex: 1;
+.hero article p {
     margin: 0;
     font-size: 0.95rem;
     color: var(--accent1-color);
+    line-height: 1.6;
 }
 
-.hero-article img {
-    width: clamp(100px, 15vw, 160px);
+/* Float image to the right inside the article */
+.hero article img {
+    float: right;
+    width: clamp(90px, 14vw, 150px);
     height: auto;
     border-radius: 6px;
+    margin-left: 16px;
     object-fit: cover;
-    flex-shrink: 0;
 }
 
 /* ══════════════════════════════════════════════════════
