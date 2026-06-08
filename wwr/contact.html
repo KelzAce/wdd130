@@ -2,131 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting Company">
-    <title>Contact Us | White Water Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | White Water Rafting Company</title>
+    <meta name="description"
+      content="Contact White Water Rafting Company in Kolob, California. Send us a message about reservations, general inquiries, or website suggestions. Our expert team is ready to help you." />
+    <meta name="author" content="Okoro Ikechi Emmanuel" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-    <!-- HEADER (reuse across all pages) -->
-    <header class="site-header">
-        <div class="logo">
-            <img src="images/logo.png" alt="White Water Rafting Logo">
-        </div>
-
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo-bluein.jpg" alt="BlueIn Rafting Logo" />
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
 
-        <!-- COMPANY INFO -->
+        <!-- CONTACT INFO -->
         <section class="contact-info">
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
+            <address>
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p><a href="tel:+19999999999">+1 999 999 9999</a></p>
+                <p><a href="mailto:Ikechigreat@gmail.com">Ikechigreat@gmail.com</a></p>
+            </address>
         </section>
 
-        <!-- MAP + FORM LAYOUT WRAPPER -->
-        <section class="contact-layout">
+        <!-- MAP + FORM -->
+        <div class="contact-layout">
 
-            <!-- GOOGLE MAP -->
+            <!-- MAP -->
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%"
-                  height="300" loading="lazy">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0!2d-113.0!3d37.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDE4JzAwLjAiTiAxMTPCsDAwJzAwLjAiVw!5e0!3m2!1sen!2sus!4v0"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  title="Map showing White Water Rafting Company location in Kolob, California">
                 </iframe>
             </div>
 
             <!-- CONTACT FORM -->
-            <form class="contact-form">
+            <form class="contact-form" action="#" method="post" novalidate>
 
+                <!-- Name -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <input type="text" id="name" name="name" placeholder="Your full name" required
+                  autocomplete="name" />
 
+                <!-- Email -->
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                  autocomplete="email" />
 
+                <!-- Message Purpose -->
                 <fieldset>
                     <legend>Message Purpose</legend>
-
                     <label>
-                        <input type="radio" name="purpose" value="general" required>
+                        <input type="radio" id="purpose-general" name="purpose"
+                          value="general-inquiry" required />
                         General Inquiry
                     </label>
-
                     <label>
-                        <input type="radio" name="purpose" value="reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation-question" />
                         Reservation Question
                     </label>
-
                     <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="website-suggestion" />
                         Website Suggestion
                     </label>
                 </fieldset>
 
+                <!-- Message -->
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type here"></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Type here"
+                  required></textarea>
 
+                <!-- Newsletter -->
                 <label class="subscribe">
-                    <input type="checkbox" name="subscribe">
-                    Please Subscribe me to the monthly newsletter
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+                    Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit">Get in Touch</button>
+                <!-- Submit -->
+                <button type="submit">Get in Touch!</button>
 
             </form>
-        </section>
+
+        </div>
 
         <!-- EMPLOYEE PROFILES -->
-        <section class="employees">
-            <h2>We Are Here to Serve You</h2>
-
+        <section class="employees" aria-labelledby="team-heading">
+            <h2 id="team-heading">We Are Here to Serve You</h2>
             <div class="employee-grid">
+
                 <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1">
-                    <figcaption>John Doe - Operations Manager</figcaption>
+                    <img src="images/jordan.jpg" alt="Jordan Mitchell, Head River Guide" />
+                    <figcaption>
+                        Jordan Mitchell<br>
+                        <span>Head River Guide</span>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2">
-                    <figcaption>Jane Smith - Customer Support Lead</figcaption>
+                    <img src="images/samantha.jpg" alt="Samantha Reyes, Reservations Manager" />
+                    <figcaption>
+                        Samantha Reyes<br>
+                        <span>Reservations Manager</span>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3">
-                    <figcaption>Mark Johnson - Trip Coordinator</figcaption>
+                    <img src="images/derek.jpg" alt="Derek Owens, Safety and Training Officer" />
+                    <figcaption>
+                        Derek Owens<br>
+                        <span>Safety &amp; Training Officer</span>
+                    </figcaption>
                 </figure>
+
             </div>
         </section>
 
     </main>
 
-    <!-- FOOTER (reuse across all pages) -->
+    <!-- FOOTER -->
     <footer>
-        <p>©️2026 BlueIn Rafting Okoro Ikechi Emmanuel</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook_220200.png" alt="Facebook Icon">
+        <p>Footer Content including Social Media Icons/Links</p>
+        <div class="socialmedia" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook" />
             </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin_3991775.png" alt="LinkedIn Icon">
+            <a href="#" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram" />
             </a>
-            <a href="https://instagram.com">
-                <img src="images/social_15707749.png" alt="Instagram Icon">
+            <a href="#" aria-label="Twitter">
+                <img src="images/twitter.png" alt="Twitter" />
             </a>
-        </nav>
+        </div>
     </footer>
+
 </body>
 
 </html>
