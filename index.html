@@ -4,65 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ikechi Homepage containing multiple informations and more">
-    <title> Okoro Ikechi Emmanuel| WDD 130</title>
+    <meta name="description"
+      content="BlueIn Rafting – thrilling white-water rafting adventures on the world's most exciting rivers. Book your trip today!">
     <meta name="author" content="Okoro Ikechi Emmanuel">
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Home | BlueIn Rafting</title>
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
+
 
 <body>
     <header>
+        <img src="images/logo-bluein.jpg" alt="BlueIn Rafting Logo">
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr\about.html">Rafting Website</a>
-            <a href="https://www.linkedin.com/in/ikechi-okoro-321483184/">linkedin</a>
-            <a href="https://www.facebook.com/lilian.benedict.12/">facebook</a>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="wwr/about.html">About Us</a></li>
+                <li><a href="wwr/trips.html">Trips</a></li>
+                <li><a href="wwr/contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-    <div class="grid">
-        <main>
-            <h1> Okoro Ikechi Emmanuel | WDD 130</h1>
-            <img src="images/profile.jpg" alt="a Mirror selfie photo of Myself" width="200">
-            <p> I am a Student of BYU College, Idaho, studying for a degree in software development.
-                Outside technology, I enjoy music, exploring new ideas in tech and business,
-                watching
-                movies and
-                series, and spending time learning things that improve both my personal and
-                professional
-                growth. I
-                also enjoy collaborating with people, solving practical problems, and building
-                things
-                that have real
-                impact.
-                Beyond work, I am currently studying Software Engineering at Brigham Young
-                University–Idaho, where I
-                continue to strengthen my understanding of software design, problem solving, and
-                modern
-                engineering
-                practices.
 
-            </p>
+    <main>
+        <!-- HERO -->
+        <div class="hero">
+            <img src="wwr\images\rafting-hero.jpg"
+              alt="Rafters powering through white water rapids at sunrise">
+            <h1>Ride the River. Live the Adventure.</h1>
+        </div>
 
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/philadelphia-pennsylvania-temple"
-                      target="_blank">Philadelphia Pennsylvania Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/paris-france-temple"
-                      target="_blank">Paris France Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/lima-peru-los-olivos-temple"
-                      target="_blank">Berlin Germany Temple</a></li>
-            </ul>
-        </main>
+        <!-- NEWSLETTER SIGN-UP -->
+        <section class="newsletter-section">
+            <div class="newsletter-inner">
+                <div class="newsletter-text">
+                    <h2>Stay in the Current</h2>
+                    <p>Sign up for our newsletter and be the first to hear about new trips,
+                        seasonal deals, and expert river guides — delivered straight to your inbox.
+                    </p>
+                </div>
+                <form class="newsletter-form" action="#" method="get">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Ikechi Emmanuel"
+                      required>
 
-        <aside class="box">
-            <h2> Lagos </h2>
-            <img src="images/lagos.jpg" alt="A picture of Lagos Nigeria">
-            <p> Lagos is the economic capital of West Africa</p>
-        </aside>
-    </div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com"
+                      required>
 
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section">
+            <h2>Ready to Take the Plunge?</h2>
+            <p>Browse our curated selection of rafting adventures — from gentle half-day floats
+                to heart-pounding multi-day expeditions through remote wilderness canyons.</p>
+            <a href="trips.html" class="cta-btn">Explore Our Trips &rarr;</a>
+        </section>
+
+        <!-- CSS GRID CONTENT SECTION: 2 columns of image + text pairs -->
+        <section class="offerings-section">
+            <h2>Why Choose BlueIn Rafting?</h2>
+            <div class="offerings-grid">
+
+                <div class="offering-card">
+                    <img src="wwr\images\rafting19_600.jpg"
+                      alt="Expert certified river guides leading a raft">
+                    <div class="offering-text">
+                        <h3>Expert Certified Guides</h3>
+                        <p>Every trip is led by nationally certified guides with thousands of hours
+                            on
+                            the water. Safety is our first priority — adventure is a close second.
+                            Our
+                            guides know every rapid by name and every trick to keep you smiling
+                            through
+                            the roughest water.</p>
+                    </div>
+                </div>
+
+                <div class="offering-card offering-card--reverse">
+                    <img src="wwr\images\rafting17_600.jpg"
+                      alt="Scenic river canyon landscape with clear blue water">
+                    <div class="offering-text">
+                        <h3>Breathtaking River Locations</h3>
+                        <p>We operate on some of the most spectacular waterways in the world. From
+                            the roaring gorges of the Salmon River to the dramatic canyons of the
+                            Colorado, every destination we choose is chosen for its natural beauty
+                            as
+                            much as its white-water challenge.</p>
+                    </div>
+                </div>
+
+                <div class="offering-card">
+                    <img src="wwr\images\rafting47_600.jpg"
+                      alt="Group of happy rafters celebrating after a run">
+                    <div class="offering-text">
+                        <h3>Trips for Every Level</h3>
+                        <p>Whether you're a first-timer looking for a gentle introduction or a
+                            seasoned paddler chasing Class V rapids, we have an experience designed
+                            for
+                            you. Our trip advisors will match you with the perfect adventure so you
+                            always feel challenged but never overwhelmed.</p>
+                    </div>
+                </div>
+
+                <div class="offering-card offering-card--reverse">
+                    <img src="wwr\images\rafting20_600.jpg"
+                      alt="Rafting gear and safety equipment laid out">
+                    <div class="offering-text">
+                        <h3>Top-of-the-Line Gear</h3>
+                        <p>We invest in premium, regularly inspected rafts, helmets, life jackets,
+                            and dry gear so you don't have to worry about anything except soaking up
+                            the experience. All equipment is included with every booking at no extra
+                            charge.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p> ©️2026 🌴 Okoro Ikechi Emmanuel 🌴 Lagos, Nigeria</p>
+        <p>©️2026 BlueIn Rafting Okoro Ikechi Emmanuel</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="wwr/images/facebook_220200.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="wwr/images/linkedin_3991775.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="wwr/images/social_15707749.png" alt="Instagram Icon">
+            </a>
+        </nav>
     </footer>
 </body>
 
