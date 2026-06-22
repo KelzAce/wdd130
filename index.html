@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="BlueIn Rafting – thrilling white-water rafting adventures on the world's most exciting rivers. Book your trip today!">
+      content="BlueIn Rafting offers thrilling white-water rafting adventures for all skill levels. Book your river trip today and experience the rush of the rapids.">
     <meta name="author" content="Okoro Ikechi Emmanuel">
     <title>Home | BlueIn Rafting</title>
     <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
 
-
 <body>
+
     <header>
-        <img src="images/logo-bluein.jpg" alt="BlueIn Rafting Logo">
+        <img src="wwr/images/logo-bluein.jpg" alt="BlueIn Rafting Logo">
         <nav>
             <ul>
                 <li><a href="index.html" aria-current="page">Home</a></li>
@@ -25,13 +25,17 @@
         </nav>
     </header>
 
-    <main>
-        <!-- HERO -->
-        <div class="hero">
-            <img src="wwr\images\rafting-hero.jpg"
-              alt="Rafters powering through white water rapids at sunrise">
-            <h1>Ride the River. Live the Adventure.</h1>
+    <!-- HERO: full-width, outside main container -->
+    <div class="hero">
+        <img src="wwr\images\rafting-hero.jpg"
+          alt="A team of rafters paddling through powerful white-water rapids">
+        <div class="hero-overlay">
+            <h1>Ride the River.<br>Live the Adventure.</h1>
+            <p class="hero-tagline">White-water rafting experiences for every skill level</p>
         </div>
+    </div>
+
+    <main>
 
         <!-- NEWSLETTER SIGN-UP -->
         <section class="newsletter-section">
@@ -39,17 +43,17 @@
                 <div class="newsletter-text">
                     <h2>Stay in the Current</h2>
                     <p>Sign up for our newsletter and be the first to hear about new trips,
-                        seasonal deals, and expert river guides — delivered straight to your inbox.
+                        seasonal deals, and expert river tips — delivered straight to your inbox.
                     </p>
                 </div>
                 <form class="newsletter-form" action="#" method="get">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="e.g. Ikechi Emmanuel"
-                      required>
+                    <label for="subscriber-name">Your Name</label>
+                    <input type="text" id="subscriber-name" name="subscriber-name"
+                      placeholder="e.g. Ikechi Emmanuel" required>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="you@example.com"
-                      required>
+                    <label for="subscriber-email">Email Address</label>
+                    <input type="email" id="subscriber-email" name="subscriber-email"
+                      placeholder="you@example.com" required>
 
                     <button type="submit">Subscribe Now</button>
                 </form>
@@ -61,17 +65,17 @@
             <h2>Ready to Take the Plunge?</h2>
             <p>Browse our curated selection of rafting adventures — from gentle half-day floats
                 to heart-pounding multi-day expeditions through remote wilderness canyons.</p>
-            <a href="trips.html" class="cta-btn">Explore Our Trips &rarr;</a>
+            <a href="trips.html" class="cta-btn">Explore Our Trips &#8594;</a>
         </section>
 
-        <!-- CSS GRID CONTENT SECTION: 2 columns of image + text pairs -->
+        <!-- CSS GRID OFFERINGS: at least 2 images + content, uses CSS Grid -->
         <section class="offerings-section">
             <h2>Why Choose BlueIn Rafting?</h2>
             <div class="offerings-grid">
 
                 <div class="offering-card">
                     <img src="wwr\images\rafting19_600.jpg"
-                      alt="Expert certified river guides leading a raft">
+                      alt="Certified river guide helping guests prepare for a rafting trip">
                     <div class="offering-text">
                         <h3>Expert Certified Guides</h3>
                         <p>Every trip is led by nationally certified guides with thousands of hours
@@ -86,23 +90,22 @@
 
                 <div class="offering-card offering-card--reverse">
                     <img src="wwr\images\rafting17_600.jpg"
-                      alt="Scenic river canyon landscape with clear blue water">
+                      alt="Scenic view of a river canyon with clear rushing water">
                     <div class="offering-text">
                         <h3>Breathtaking River Locations</h3>
                         <p>We operate on some of the most spectacular waterways in the world. From
                             the roaring gorges of the Salmon River to the dramatic canyons of the
-                            Colorado, every destination we choose is chosen for its natural beauty
-                            as
-                            much as its white-water challenge.</p>
+                            Colorado, every destination is chosen for its natural beauty as much as
+                            its white-water challenge.</p>
                     </div>
                 </div>
 
                 <div class="offering-card">
                     <img src="wwr\images\rafting47_600.jpg"
-                      alt="Group of happy rafters celebrating after a run">
+                      alt="Happy group of rafters celebrating after completing a rapid">
                     <div class="offering-text">
                         <h3>Trips for Every Level</h3>
-                        <p>Whether you're a first-timer looking for a gentle introduction or a
+                        <p>Whether you are a first-timer looking for a gentle introduction or a
                             seasoned paddler chasing Class V rapids, we have an experience designed
                             for
                             you. Our trip advisors will match you with the perfect adventure so you
@@ -112,11 +115,12 @@
 
                 <div class="offering-card offering-card--reverse">
                     <img src="wwr\images\rafting20_600.jpg"
-                      alt="Rafting gear and safety equipment laid out">
+                      alt="Quality rafting helmets, life jackets, and paddles laid out">
                     <div class="offering-text">
                         <h3>Top-of-the-Line Gear</h3>
                         <p>We invest in premium, regularly inspected rafts, helmets, life jackets,
-                            and dry gear so you don't have to worry about anything except soaking up
+                            and dry gear so you do not have to worry about anything except soaking
+                            up
                             the experience. All equipment is included with every booking at no extra
                             charge.</p>
                     </div>
@@ -124,6 +128,7 @@
 
             </div>
         </section>
+
     </main>
 
     <footer>
@@ -140,6 +145,7 @@
             </a>
         </nav>
     </footer>
+
 </body>
 
 </html>
